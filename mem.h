@@ -3,4 +3,6 @@ typedef struct mem_wrapper{
 } MemDat;
 
 void initMem(MemDat**, int);
-void insertDat(MemDat**, File*);
+void insertDat(MemDat**, int, int, int*);
+int* getDat(MemDat*, int, int);
+int* serializeStr(char*);
